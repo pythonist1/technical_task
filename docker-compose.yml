@@ -1,0 +1,41 @@
+
+version: "3"
+
+services:
+
+  main:
+    
+    build: main/
+
+    command: python ./main.py
+
+    network_mode: host
+
+    ports:
+      - 8000:8000
+    
+
+
+  periodic:
+
+    build: periodic/
+
+    command: python ./periodic.py
+
+    network_mode: host
+
+    depends_on: 
+      - main
+
+  mongo_db:
+
+    image: mongo:latest
+    ports:
+    - 27017:27017
+    volumes:
+    - db-data:/data/db
+    - mongo-config:/data/configdb
+
+volumes:
+  db-data:
+  mongo-config:
