@@ -8,9 +8,6 @@ import uvicorn
 from collector import collect
 from schemas import Route
 from database import db, get_database
-from pymongo import MongoClient
-
-
 
 
 
