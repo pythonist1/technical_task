@@ -15,7 +15,7 @@ async def run_periodically():
                 print(now)
                 run_time += datetime.timedelta(days=1)
                 session = aiohttp.ClientSession()
-                async with session.get('http://localhost:8080/collector_run'):
+                async with session.get('http://localhost:8000/collector_run'):
                     await session.close()
 
 
