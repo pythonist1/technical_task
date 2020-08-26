@@ -45,48 +45,49 @@
 		<h5>{{ promt }}&emsp;<input type="button" value="OK" @click="routeCheck"></h5>
 		<h3>{{ flights_info[0] }}</h3>
 		<h3>{{ flights_info[1] }}</h3>
+		<h3>{{ info }} </h3>
 		<div id='table' class ='table'>
 			<table width="50%">
 				<tr height='100' width = '100'>
-					<td @click='booking_token = dates[0][1]; isActive = !isActive' :class='getCssClasses(dates[0][1])' valign="top">{{ dates[0][0] }}</td>
-					<td @click='booking_token = dates[1][1]; isActive = !isActive' :class='getCssClasses(dates[1][1])' valign="top">{{ dates[1][0] }}</td>
-					<td @click='booking_token = dates[2][1]; isActive = !isActive' :class='getCssClasses(dates[2][1])' valign="top">{{ dates[2][0] }}</td>
-					<td @click='booking_token = dates[3][1]; isActive = !isActive' :class='getCssClasses(dates[3][1])' valign="top">{{ dates[3][0] }}</td>
-					<td @click='booking_token = dates[4][1]; isActive = !isActive' :class='getCssClasses(dates[4][1])' valign="top">{{ dates[4][0] }}</td>
-					<td @click='booking_token = dates[5][1]; isActive = !isActive' :class='getCssClasses(dates[5][1])' valign="top">{{ dates[5][0] }}</td>
-					<td @click='booking_token = dates[6][1]; isActive = !isActive' :class='getCssClasses(dates[6][1])' valign="top">{{ dates[6][0] }}</td>
+					<td @click='booking_token = dates[0][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[0][1])' valign="top">{{ dates[0][0] }}</td>
+					<td @click='booking_token = dates[1][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[1][1])' valign="top">{{ dates[1][0] }}</td>
+					<td @click='booking_token = dates[2][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[2][1])' valign="top">{{ dates[2][0] }}</td>
+					<td @click='booking_token = dates[3][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[3][1])' valign="top">{{ dates[3][0] }}</td>
+					<td @click='booking_token = dates[4][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[4][1])' valign="top">{{ dates[4][0] }}</td>
+					<td @click='booking_token = dates[5][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[5][1])' valign="top">{{ dates[5][0] }}</td>
+					<td @click='booking_token = dates[6][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[6][1])' valign="top">{{ dates[6][0] }}</td>
 				</tr>
 				<tr height='100'>
-					<td @click='booking_token = dates[7][1]; isActive = !isActive' :class='getCssClasses(dates[7][1])' valign="top">{{ dates[7][0] }}</td>
-					<td @click='booking_token = dates[8][1]; isActive = !isActive' :class='getCssClasses(dates[8][1])' valign="top">{{ dates[8][0] }}</td>
-					<td @click='booking_token = dates[9][1]; isActive = !isActive' :class='getCssClasses(dates[9][1])' valign="top">{{ dates[9][0] }}</td>
-					<td @click='booking_token = dates[10][1]; isActive = !isActive' :class='getCssClasses(dates[10][1])' valign="top">{{ dates[10][0] }}</td>
-					<td @click='booking_token = dates[11][1]; isActive = !isActive' :class='getCssClasses(dates[11][1])' valign="top">{{ dates[11][0] }}</td>
-					<td @click='booking_token = dates[12][1]; isActive = !isActive' :class='getCssClasses(dates[12][1])' valign="top">{{ dates[12][0] }}</td>
-					<td @click='booking_token = dates[13][1]; isActive = !isActive' :class='getCssClasses(dates[13][1])' valign="top">{{ dates[13][0] }}</td>
+					<td @click='booking_token = dates[7][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[7][1])' valign="top">{{ dates[7][0] }}</td>
+					<td @click='booking_token = dates[8][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[8][1])' valign="top">{{ dates[8][0] }}</td>
+					<td @click='booking_token = dates[9][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[9][1])' valign="top">{{ dates[9][0] }}</td>
+					<td @click='booking_token = dates[10][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[10][1])' valign="top">{{ dates[10][0] }}</td>
+					<td @click='booking_token = dates[11][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[11][1])' valign="top">{{ dates[11][0] }}</td>
+					<td @click='booking_token = dates[12][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[12][1])' valign="top">{{ dates[12][0] }}</td>
+					<td @click='booking_token = dates[13][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[13][1])' valign="top">{{ dates[13][0] }}</td>
 				</tr>
 				<tr height='100'>
-					<td @click='booking_token = dates[14][1]; isActive = !isActive' :class='getCssClasses(dates[14][1])' valign="top">{{ dates[14][0] }}</td>
-					<td @click='booking_token = dates[15][1]; isActive = !isActive' :class='getCssClasses(dates[15][1])' valign="top">{{ dates[15][0] }}</td>
-					<td @click='booking_token = dates[16][1]; isActive = !isActive' :class='getCssClasses(dates[16][1])' valign="top">{{ dates[16][0] }}</td>
-					<td @click='booking_token = dates[17][1]; isActive = !isActive' :class='getCssClasses(dates[17][1])' valign="top">{{ dates[17][0] }}</td>
-					<td @click='booking_token = dates[18][1]; isActive = !isActive' :class='getCssClasses(dates[18][1])' valign="top">{{ dates[18][0] }}</td>
-					<td @click='booking_token = dates[19][1]; isActive = !isActive' :class='getCssClasses(dates[19][1])' valign="top">{{ dates[19][0] }}</td>
-					<td @click='booking_token = dates[20][1]; isActive = !isActive' :class='getCssClasses(dates[20][1])' valign="top">{{ dates[20][0] }}</td>
+					<td @click='booking_token = dates[14][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[14][1])' valign="top">{{ dates[14][0] }}</td>
+					<td @click='booking_token = dates[15][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[15][1])' valign="top">{{ dates[15][0] }}</td>
+					<td @click='booking_token = dates[16][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[16][1])' valign="top">{{ dates[16][0] }}</td>
+					<td @click='booking_token = dates[17][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[17][1])' valign="top">{{ dates[17][0] }}</td>
+					<td @click='booking_token = dates[18][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[18][1])' valign="top">{{ dates[18][0] }}</td>
+					<td @click='booking_token = dates[19][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[19][1])' valign="top">{{ dates[19][0] }}</td>
+					<td @click='booking_token = dates[20][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[20][1])' valign="top">{{ dates[20][0] }}</td>
 				</tr>
 				<tr height='100'>
-					<td @click='booking_token = dates[21][1]; isActive = !isActive' :class='getCssClasses(dates[21][1])' valign="top">{{ dates[21][0] }}</td>
-					<td @click='booking_token = dates[22][1]; isActive = !isActive' :class='getCssClasses(dates[22][1])' valign="top">{{ dates[22][0] }}</td>
-					<td @click='booking_token = dates[23][1]; isActive = !isActive' :class='getCssClasses(dates[23][1])' valign="top">{{ dates[23][0] }}</td>
-					<td @click='booking_token = dates[24][1]; isActive = !isActive' :class='getCssClasses(dates[24][1])' valign="top">{{ dates[24][0] }}</td>
-					<td @click='booking_token = dates[25][1]; isActive = !isActive' :class='getCssClasses(dates[25][1])' valign="top">{{ dates[25][0] }}</td>
-					<td @click='booking_token = dates[26][1]; isActive = !isActive' :class='getCssClasses(dates[26][1])' valign="top">{{ dates[26][0] }}</td>
-					<td @click='booking_token = dates[27][1]; isActive = !isActive' :class='getCssClasses(dates[27][1])' valign="top">{{ dates[27][0] }}</td>
+					<td @click='booking_token = dates[21][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[21][1])' valign="top">{{ dates[21][0] }}</td>
+					<td @click='booking_token = dates[22][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[22][1])' valign="top">{{ dates[22][0] }}</td>
+					<td @click='booking_token = dates[23][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[23][1])' valign="top">{{ dates[23][0] }}</td>
+					<td @click='booking_token = dates[24][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[24][1])' valign="top">{{ dates[24][0] }}</td>
+					<td @click='booking_token = dates[25][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[25][1])' valign="top">{{ dates[25][0] }}</td>
+					<td @click='booking_token = dates[26][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[26][1])' valign="top">{{ dates[26][0] }}</td>
+					<td @click='booking_token = dates[27][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[27][1])' valign="top">{{ dates[27][0] }}</td>
 				</tr>
 				<tr height='100'>
-					<td @click='booking_token = dates[28][1]; isActive = !isActive' :class='getCssClasses(dates[28][1])' valign="top">{{ dates[28][0] }}</td>
-					<td @click='booking_token = dates[29][1]; isActive = !isActive' :class='getCssClasses(dates[29][1])' valign="top">{{ dates[29][0] }}</td>
-					<td @click='booking_token = dates[30][1]; isActive = !isActive' :class='getCssClasses(dates[30][1])' valign="top">{{ dates[30][0] }}</td>
+					<td @click='booking_token = dates[28][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[28][1])' valign="top">{{ dates[28][0] }}</td>
+					<td @click='booking_token = dates[29][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[29][1])' valign="top">{{ dates[29][0] }}</td>
+					<td @click='booking_token = dates[30][1], flights_info = {0:null, 1:null}' :class='getCssClasses(dates[30][1])' valign="top">{{ dates[30][0] }}</td>
 				</tr>
 			  </table>
 			
@@ -110,7 +111,6 @@
 			pnum: 1,
 			bnum: 1,
 			booking_token: null,
-			isActive: false,
 			promt: null,
 			flights_info: {0:null, 1:null}
 		},
@@ -119,14 +119,25 @@
 					axios
 					.get('http://127.0.0.1:8000/' + route)
 					.then(response =>  {
-							this.info = response['data'] ? null : 'Подождите пока данные загрузятся в базу';
+							if (response['data']) {
+								this.info = null;
+							} else {
+								this.info = 'Подождите пока данные загрузятся в базу';
+								this.dates = {0:{0:null,1:null},1:{0:null,1:null},2:{0:null,1:null},3:{0:null,1:null},4:{0:null,1:null},5:{0:null,1:null},6:{0:null,1:null},7:{0:null,1:null},
+					8:{0:null,1:null},9:{0:null,1:null},10:{0:null,1:null},11:{0:null,1:null},12:{0:null,1:null},13:{0:null,1:null},14:{0:null,1:null},
+					15:{0:null,1:null},16:{0:null,1:null},17:{0:null,1:null},18:{0:null,1:null},19:{0:null,1:null},20:{0:null,1:null},21:{0:null,1:null},
+					22:{0:null,1:null},23:{0:null,1:null},24:{0:null,1:null},25:{0:null,1:null},26:{0:null,1:null},27:{0:null,1:null},28:{0:null,1:null},
+					29:{0:null,1:null},30:{0:null,1:null},31:{0:null,1:null}}
+								this.promt = null
+							};
 							response.data['dates'].forEach(element => {
 								let index = response.data['dates'].indexOf(element)
 								this.dates[index][0] = new Date(element['date']).toISOString().substring(0, 10) + "\nЦена: " + 
 								element['variant']['price'];
 								this.dates[index][1] = element['variant']['booking_token'];
 								this.promt = 'Кликните по дате чтобы выбрать и нажмите'
-							})
+							});
+							this.flights_info = {0:null, 1:null}
 						}
 					)
 			},
@@ -143,11 +154,15 @@
 				this.booking_token = booking_token;
 			},
 			getCssClasses: function(booking_token) {
-					if (this.booking_token == booking_token) {
-					return {
-						yellow: this.isActive
-					}
-				}
+					if (this.booking_token == null || this.booking_token != booking_token) {
+						return {
+							white: true
+						} 
+					} else {
+							return {
+								yellow: true
+							}
+						}
 			},
 		},
 	})
